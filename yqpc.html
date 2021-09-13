@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+     <textarea id="jl" rows="50" cols="50"></textarea>
+     <button type="button" onclick="test()" style="font-size:20px">Click Me</button>
+     <p id="demo"></p>
+     <script>
+	     function test(){
+	         var jl = document.getElementById('jl').value;
+	         var wj = [];
+	         var md = ["张莉","张康寿", "李敏", "李杰", "王超", "余秋华","王劲松","强昆生","鄢伟","广见","陈胜红","易海","冯常茂","赵忠泉","胡小强","王后金","王衍棠","雷振宇","骆帅兵","赵静","孙鸣","侯月明","刘金萍","王改云","简晓玲","金华峰","袁晓蔷","尚春江"];
+	         for (i = 0; i < md.length; i++ ){
+	             if (!(jl.indexOf(md[i])+1)){
+	                 wj.push(md[i]);
+                    }
+	         }
+	         alert(wj);
+	     }
+     </script>
+</body>
+</html>
